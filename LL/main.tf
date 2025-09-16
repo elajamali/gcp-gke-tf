@@ -1,19 +1,3 @@
-# main.tf
-
-terraform {
-  required_providers {
-    google = {
-      source  = "hashicorp/google"
-      version = "~> 5.0" # Specify a suitable version constraint
-    }
-  }
-}
-
-provider "google" {
-  project = var.project_id
-  region  = var.region
-}
-
-# All other resources (VPC, GKE, Service Accounts, etc.) are defined
-# in network.tf, gke.tf, service_accounts.tf, and outputs.tf.
-# Terraform will load all .tf files in this directory.
+version https://git-lfs.github.com/spec/v1
+oid sha256:1283f8dc1e2a6458f07a6d742b8ca46b6eba10cd9ace4bc9545df967a9262f95
+size 1089
